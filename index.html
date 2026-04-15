@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinnesküche | Redirect</title>
+    
+    <meta http-equiv="refresh" content="2; url=https://sinneskueche.ch/" />
+    
+   <style>
+    /* Importing Satoshi directly from the source */
+    @import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500&display=swap');
+
+    body {
+        background-color: #fffce3;
+        color: #1c0700;
+        /* Using the imported Satoshi font */
+        font-family: 'Satoshi', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .container {
+        opacity: 0;
+        animation: fadeIn 0.8s ease-in forwards;
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+        background-color: #caaff3;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        display: inline-block;
+        animation: pulse 1.5s infinite ease-in-out;
+    }
+
+    p {
+        /* Matches your dreamy, low-key aesthetic */
+        font-style: italic;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        opacity: 0.6;
+        font-size: 0.95rem;
+        text-transform: lowercase;
+    }
+
+    a {
+        color: #1c0700;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(28, 7, 0, 0.2);
+        transition: opacity 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+        0%, 100% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.2); opacity: 0.5; }
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="dot"></div>
+        <p>Redirecting to <a href="https://sinneskueche.ch/">sinneskueche.ch</a></p>
+    </div>
+
+    <script type="text/javascript">
+        // Immediate redirect via JavaScript
+        setTimeout(function() {
+            window.location.href = "https://sinneskueche.ch/";
+        }, 800);
+    </script>
+</body>
+</html>
